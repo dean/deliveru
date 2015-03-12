@@ -1,30 +1,23 @@
-## Installation
-
-Download to your project directory, add `README.md`, and commit:
+## Installation and Setup
 
 ```sh
-curl -LO http://git.io/Xy0Chg
-git add README.md
-git commit -m "Use README Boilerplate"
+git clone https://github.com/dean/deliveru
+cd deliveru
+virtualenv env
+source env/bin/activate
+pip install -r requirements.txt
+python manage.py migrate
 ```
 
-## Usage
-
-Replace the contents of `README.md` with your project's:
-
-* Name
-* Description
-* Installation instructions
-* Usage instructions
-* Support instructions
-* Contributing instructions
-
-Feel free to remove any sections that aren't applicable to your project.
+## Running the application
+```sh
+python manage.py runserver 127.0.0.1:8080
+```
 
 ## Support
 
-Please [open an issue](https://github.com/fraction/readme-boilerplate/issues/new) for questions and concerns.
+Please [open an issue](https://github.com/dean/deliveru) for questions and concerns.
 
 ## Contributing
 
-Fork the project, commit your changes, and [open a pull request](https://github.com/fraction/readme-boilerplate/compare/).
+Fork the project, commit your changes, and [open a pull request](https://github.com/dean/deliveru/compare/).
